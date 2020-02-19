@@ -27,6 +27,15 @@ return (
           </NavItem>
         </Nav>
       </Navbar.Collapse>
+
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse className = "justify-content-end">
+        <Nav>
+          <NavItem>
+            <Nav.Link href ="/authors">authors</Nav.Link>
+          </NavItem>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
 
     <Routes />
