@@ -7,8 +7,8 @@ export function AuthorsDisplay(props){
         <div className = "display">
             <h3>Authors</h3>
             <CardColumns>
-            {props.author.map( a => (
-               <AuthorCard author = {a} key = {a.id} />
+            {props.authors.map( (a) => (
+               <AuthorCard author={a} key={a.id}/>
             ))}
             </CardColumns>
         </div>

@@ -6,7 +6,7 @@ export default function Books (props) {
        const [data, setdata] = useState ([]);
 
        useEffect(() => {
-        fetch ("https://local:5001/api/books/")
+        fetch ("https://localhost:5001/api/books/")
          .then (response => response.json())
          .then (data => setdata(data));
 

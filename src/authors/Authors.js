@@ -6,7 +6,7 @@ export default function Authors (props) {
        const [data, setdata] = useState ([]);
 
        useEffect(() => {
-        fetch ("https://local:5001/api/authors/")
+        fetch ("https://localhost:5001/api/authors/")
          .then (response => response.json())
          .then (data => setdata(data));
 
@@ -17,7 +17,7 @@ export default function Authors (props) {
         return (
             <div className = "Authors">
                 <div className = "lander">
-                    <AuthorsDisplay books = {data} />
+                    <AuthorsDisplay authors = {data} />
 
                 </div>
             </div>
